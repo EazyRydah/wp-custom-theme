@@ -9,7 +9,8 @@
       <a href="<?php echo get_post_type_archive_link('program') ?>" class="btn btn--large btn--blue">Find Your Major</a>
     </div>
   </div>
-
+<!-- <input type="text" id="test">
+<textarea name="" id="" cols="30" rows="10"></textarea> -->
   <div class="full-width-split group">
     <div class="full-width-split__one">
       <div class="full-width-split__inner">

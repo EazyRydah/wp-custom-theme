@@ -119,12 +119,16 @@ class Search {
   keyPressDispatcher(e) {
 
     // Some issues...with textareas and input and overlay
-    if (e.keyCode == 83 && ! this.isOverlayOpen && ! document.querySelectorAll("input") == (document.activeElement === document.querySelectorAll("input")) && ! document.querySelectorAll("textarea") == (document.activeElement === document.querySelectorAll("textarea")) ) {
+    if (e.keyCode == 83 && ! this.isOverlayOpen && document.activeElement.tagName != 'INPUT' && document.activeElement.tagName != 'TEXTAREA' ) {
+ 
       this.openOverlay(e);
+
     }
 
     if (e.keyCode == 27 && this.isOverlayOpen) {
+
       this.closeOverlay(e);
+      
     }
 
   }

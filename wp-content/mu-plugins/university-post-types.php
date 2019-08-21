@@ -79,6 +79,8 @@ function university_post_types()
     
     // Note Post Type
     register_post_type('note', array(
+    'capability_type' => 'note',
+    'map_meta_cap' => true,
     'show_in_rest' => true, 
     'supports' => array('title', 'editor'),
     'public' => false,
@@ -90,6 +92,7 @@ function university_post_types()
         'all_items' => 'All Notes',
         'singular_name' => 'Note'
     ),
+    
     'menu_icon' => 'dashicons-welcome-write-blog'
 
     ));
